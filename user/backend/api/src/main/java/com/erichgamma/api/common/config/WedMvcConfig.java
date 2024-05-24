@@ -1,6 +1,6 @@
 package com.erichgamma.api.common.config;
 
-import com.example.demo.common.component.intercepter.AuthInterceptor;
+import com.erichgamma.api.common.component.intercepter.AuthInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

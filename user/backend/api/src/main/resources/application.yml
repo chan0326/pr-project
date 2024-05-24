@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: user
+  datasource:
+    url: jdbc:mysql://54.180.178.117:3306/erichgammadb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        jdbc:
+          lob:
+            '[non_contextual_creation]': true
+        '[format_sql]': true
+    show-sql: true
+    defer-datasource-initialization: true
+
+  imp:
+    imp_key: 2474726887526877
+    imp_secret: Qnoq0XDh0hEvuKgGeMBxurOCEaqoIYfx9UxbQ9qGJMsJccATHUBNraX0BiFq58DhbLPSYZW7T9VXehnO
+
+  #    open-in-view: true
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type: trace
+jwt:
+  iss: erichgamma.co.kr
+  exp: 24* 60 * 60 * 1000
+  secret: orangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorangeorange
+
+
+
+
+

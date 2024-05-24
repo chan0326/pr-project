@@ -1,5 +1,6 @@
 package com.erichgamma.api.user.model;
 
+import com.erichgamma.api.article.model.Article;
 import com.erichgamma.api.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,9 +27,9 @@ public class User extends BaseEntity {
     private String phone;
     private String job;
     private String token;
-//    @OneToMany(mappedBy = "writer", fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
-//    private List<Article> articles;
-//    private Double height;
-//    private Double weight;
+    @OneToMany(mappedBy = "writer", fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
+    private List<Article> articles;
+    private Double height;
+    private Double weight;
 }
 

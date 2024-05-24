@@ -19,6 +19,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -41,11 +42,13 @@ dependencies {
 	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.12.5'
 	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.12.5'
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.0'
+	implementation 'com.github.iamport:iamport-rest-client-java:0.1.6'
 
 
 
 
 }
+
 
 //tasks.named('test') {
 //	useJUnitPlatform()
